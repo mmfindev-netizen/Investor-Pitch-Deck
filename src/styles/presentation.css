@@ -470,32 +470,44 @@
 
 .flow-connector--horizontal {
   flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+.flow-connector__h-item {
+  display: flex;
   align-items: center;
-  gap: 0;
-  width: 100%;
+  gap: 8px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
-.flow-connector--horizontal .flow-connector__step {
-  flex-direction: column;
+.flow-connector--horizontal .flow-connector__node {
+  min-width: 0;
   flex: 1;
+  font-size: 11px;
+  padding: 10px 8px;
 }
 
-.flow-connector--horizontal .flow-connector__arrow {
-  width: 100%;
+.flow-connector__h-arrow {
+  width: 18px;
   height: 2px;
+  flex-shrink: 0;
   background: linear-gradient(to right, var(--primary-blue), var(--secondary-cyan));
+  position: relative;
 }
 
-.flow-connector--horizontal .flow-connector__arrow::after {
-  bottom: auto;
+.flow-connector__h-arrow::after {
+  content: "";
+  position: absolute;
   right: -4px;
-  left: auto;
   top: 50%;
   transform: translateY(-50%);
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-left: 6px solid var(--secondary-cyan);
-  border-right: none;
 }
 
 /* Footer / legal */
