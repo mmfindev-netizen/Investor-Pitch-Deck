@@ -68,7 +68,7 @@ export function Slide18ClosingOpportunity() {
         className={ready ? `${animClass} fade-in ${delayClass(1)}` : ""}
       >
         <div className="slide-number">Slide {data.number}</div>
-        <GmaxiraLogo />
+        <GmaxiraLogo size="md" />
       </div>
 
       <div className={ready ? `${animClass} fade-up ${delayClass(2)}` : ""}>

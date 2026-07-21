@@ -20,7 +20,7 @@ export function Slide01Cover() {
         style={{
           display: "flex",
           justifyContent: "flex-end",
-          marginBottom: 24,
+          marginBottom: 28,
         }}
         className={ready ? `${animClass} fade-in ${delayClass(1)}` : ""}
       >

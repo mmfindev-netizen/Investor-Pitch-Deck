@@ -160,34 +160,51 @@
   color: var(--muted-text);
 }
 
-/* Logo */
+/* Logo — official GX monogram, preserve aspect ratio */
 .gmaxira-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .gmaxira-logo-mark {
-  width: 28px;
+  display: block;
   height: 28px;
+  width: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  object-position: center;
   flex-shrink: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.gmaxira-logo--sm .gmaxira-logo-mark {
+  height: 28px;
+}
+
+.gmaxira-logo--md .gmaxira-logo-mark {
+  height: 40px;
+}
+
+.gmaxira-logo--lg .gmaxira-logo-mark {
+  height: 64px;
 }
 
 .gmaxira-logo-word {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.18em;
   color: var(--primary-text);
 }
 
-.gmaxira-logo--lg .gmaxira-logo-mark {
-  width: 40px;
-  height: 40px;
+.gmaxira-logo--md .gmaxira-logo-word {
+  font-size: 16px;
 }
 
 .gmaxira-logo--lg .gmaxira-logo-word {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* Background */
