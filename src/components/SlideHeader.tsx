@@ -18,7 +18,7 @@ export function SlideHeader({ number, label, showLogo = true }: SlideHeaderProps
       </div>
       {showLogo && (
         <div className="slide-header-right">
-          <GmaxiraLogo />
+          <GmaxiraLogo size="sm" />
           <span className="brand-descriptor">
             {pitchDeckConfig.brand.descriptor}
           </span>
