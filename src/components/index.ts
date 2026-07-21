@@ -1,0 +1,15 @@
+export { SlideContainer } from "./SlideContainer";
+export { SlideHeader } from "./SlideHeader";
+export { SlideNumber } from "./SlideNumber";
+export { NavigationLabel } from "./NavigationLabel";
+export { GmaxiraLogo } from "./GmaxiraLogo";
+export { InstitutionalBackground } from "./InstitutionalBackground";
+export { GlassCard } from "./GlassCard";
+export { MetricCard } from "./MetricCard";
+export { SectionHeading } from "./SectionHeading";
+export { OutlineIcon } from "./OutlineIcon";
+export { StatusBadge } from "./StatusBadge";
+export { Timeline } from "./Timeline";
+export { FlowConnector } from "./FlowConnector";
+export { LegalDisclosure } from "./LegalDisclosure";
+export { PresentationFooter } from "./PresentationFooter";

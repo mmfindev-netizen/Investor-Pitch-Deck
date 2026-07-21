@@ -1,0 +1,1048 @@
+/* Per-slide layout styles */
+
+/* —— Slide 01 Cover —— */
+.slide-cover {
+  justify-content: center;
+}
+
+.slide-cover__hero {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.slide-cover__brand-block {
+  display: flex;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.slide-cover__brand-block .accent-line {
+  width: 3px;
+  min-height: 180px;
+}
+
+.slide-cover__brand-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(56px, 6.5vw, 92px);
+  letter-spacing: 0.12em;
+  line-height: 1;
+  color: var(--primary-text);
+}
+
+.slide-cover__descriptor {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-cyan);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.slide-cover__tagline {
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--secondary-text);
+  max-width: 520px;
+}
+
+.slide-cover__visual {
+  height: 100%;
+  min-height: 420px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-cover__orbit {
+  width: min(480px, 100%);
+  aspect-ratio: 1;
+}
+
+/* —— Slide 02 Vision —— */
+.slide-vision__message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  margin-bottom: 28px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-vision__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 28px;
+  align-items: stretch;
+  min-height: 0;
+}
+
+.slide-vision__col h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.slide-vision__col--problem h3 {
+  color: var(--secondary-text);
+}
+
+.slide-vision__col--vision h3 {
+  color: var(--secondary-cyan);
+}
+
+.slide-vision__bridge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 8px;
+}
+
+.slide-vision__bridge-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--primary-blue),
+    var(--secondary-cyan),
+    transparent
+  );
+}
+
+.slide-vision__bridge-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: var(--secondary-cyan);
+}
+
+/* —— Slide 03 Market —— */
+.slide-market__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  min-height: 0;
+}
+
+.slide-market__map-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slide-market__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.slide-market__themes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.slide-market__theme-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.slide-market__theme-desc {
+  font-size: 12px;
+  color: var(--secondary-text);
+  line-height: 1.4;
+}
+
+.slide-market__seg-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(15, 98, 254, 0.15);
+  font-size: 13px;
+}
+
+.slide-market__seg-row:last-child {
+  border-bottom: none;
+}
+
+/* —— Slide 04 Why Now —— */
+.slide-whynow__hub-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.slide-whynow__hub {
+  width: 180px;
+  height: 180px;
+  font-size: 14px;
+  padding: 16px;
+  z-index: 2;
+}
+
+.slide-whynow__drivers {
+  position: absolute;
+  inset: 20px 40px;
+}
+
+.slide-whynow__driver {
+  position: absolute;
+  width: 180px;
+}
+
+.slide-whynow__timeline {
+  margin-top: 8px;
+}
+
+/* —— Slide 05 Platform —— */
+.slide-platform__hub-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+.slide-platform__hub {
+  width: 200px;
+  height: 200px;
+  font-size: 15px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.slide-platform__modules {
+  position: absolute;
+  inset: 10px 20px;
+}
+
+.slide-platform__module {
+  position: absolute;
+  width: 150px;
+}
+
+.slide-platform__caps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.slide-platform__cap {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  padding: 12px 8px;
+}
+
+/* —— Slide 06 Ecosystem —— */
+.slide-eco__hub-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.slide-eco__hub {
+  width: 190px;
+  height: 190px;
+  font-size: 14px;
+  padding: 18px;
+  z-index: 2;
+}
+
+.slide-eco__products {
+  position: absolute;
+  inset: 10px 30px;
+}
+
+.slide-eco__product {
+  position: absolute;
+  width: 140px;
+}
+
+.slide-eco__revenue {
+  margin-top: 8px;
+}
+
+.slide-eco__revenue-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary-cyan);
+  margin-bottom: 10px;
+}
+
+.slide-eco__streams {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.slide-eco__stream {
+  padding: 8px 14px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--secondary-text);
+  background: rgba(9, 18, 32, 0.5);
+}
+
+/* —— Slide 07 Positioning —— */
+.slide-pos__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 24px;
+  min-height: 0;
+}
+
+.slide-pos__matrix {
+  position: relative;
+  height: 100%;
+  min-height: 480px;
+  padding: 40px 36px 48px 56px;
+}
+
+.slide-pos__plot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  background:
+    linear-gradient(rgba(15, 98, 254, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 98, 254, 0.04) 1px, transparent 1px);
+  background-size: 20% 20%;
+}
+
+.slide-pos__axis-x,
+.slide-pos__axis-y {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted-text);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.slide-pos__axis-x {
+  bottom: 12px;
+  left: 56px;
+  right: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-pos__axis-y {
+  top: 40px;
+  bottom: 48px;
+  left: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-pos__point {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.slide-pos__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-blue);
+  background: var(--deep-navy);
+}
+
+.slide-pos__dot--highlight {
+  width: 18px;
+  height: 18px;
+  border-color: var(--secondary-cyan);
+  background: rgba(53, 208, 255, 0.25);
+  box-shadow: 0 0 16px rgba(53, 208, 255, 0.25);
+}
+
+.slide-pos__point-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  white-space: nowrap;
+}
+
+.slide-pos__point--highlight .slide-pos__point-label {
+  color: var(--secondary-cyan);
+  font-size: 12px;
+}
+
+.slide-pos__side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.slide-pos__inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.slide-pos__insp-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(15, 98, 254, 0.2);
+  border-radius: 6px;
+}
+
+/* —— Slide 08 Tech —— */
+.slide-tech__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  min-height: 0;
+}
+
+.slide-tech__layers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slide-tech__layer {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.slide-tech__layer-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--secondary-cyan);
+}
+
+.slide-tech__layer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.slide-tech__chip {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(15, 98, 254, 0.25);
+  color: var(--secondary-text);
+}
+
+.slide-tech__backbone {
+  text-align: center;
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid var(--strong-border);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-cyan);
+  background: rgba(15, 98, 254, 0.1);
+}
+
+.slide-tech__perf {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.slide-tech__perf-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(15, 98, 254, 0.12);
+}
+
+.slide-tech__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* —— Slide 09 Security —— */
+.slide-sec__hub-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+}
+
+.slide-sec__shield {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid var(--strong-border);
+  background: rgba(15, 98, 254, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 2;
+  box-shadow: 0 0 48px rgba(15, 98, 254, 0.18);
+}
+
+.slide-sec__shield-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.slide-sec__controls {
+  position: absolute;
+  inset: 0 20px;
+}
+
+.slide-sec__control {
+  position: absolute;
+  width: 170px;
+}
+
+.slide-sec__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+/* —— Slide 10 Revenue —— */
+.slide-rev__hub-area {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.slide-rev__hub {
+  width: 170px;
+  height: 170px;
+  font-size: 13px;
+  padding: 16px;
+  z-index: 2;
+}
+
+.slide-rev__sources {
+  position: absolute;
+  inset: 0 10px;
+}
+
+.slide-rev__source {
+  position: absolute;
+  width: 150px;
+}
+
+.slide-rev__panels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.slide-rev__panel-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--secondary-cyan);
+  margin-bottom: 10px;
+}
+
+/* —— Slide 11 GTM —— */
+.slide-gtm__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  min-height: 0;
+}
+
+.slide-gtm__sides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.slide-gtm__bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* —— Slide 12 Roadmap —— */
+.slide-roadmap__timeline {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+/* —— Slide 13 Financial —— */
+.slide-fin__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  min-height: 0;
+}
+
+.slide-fin__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.slide-fin__metric-chip {
+  padding: 6px 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+}
+
+.slide-fin__chart {
+  height: 240px;
+  position: relative;
+  padding: 16px 12px 28px 40px;
+}
+
+.slide-fin__chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-fin__side-grid {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 12px;
+}
+
+.slide-fin__mix-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.slide-fin__mix-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.slide-fin__mix-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--secondary-text);
+}
+
+/* —— Slide 14 Funding —— */
+.slide-fund__hero {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.slide-fund__amount {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -0.02em;
+  color: var(--secondary-cyan);
+  line-height: 1;
+}
+
+.slide-fund__period {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+.slide-fund__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+}
+
+.slide-fund__alloc-row {
+  display: grid;
+  grid-template-columns: 1fr 56px 1.4fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.slide-fund__alloc-label {
+  font-size: 13px;
+  color: var(--secondary-text);
+}
+
+.slide-fund__alloc-pct {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary-cyan);
+  text-align: right;
+}
+
+.slide-fund__bar-track {
+  height: 8px;
+  background: rgba(15, 98, 254, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slide-fund__bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-cyan));
+  border-radius: 4px;
+  transform-origin: left;
+}
+
+.slide-fund__panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* —— Slide 15 Investment Opportunity —— */
+.slide-inv__core {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.slide-inv__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  gap: 16px;
+  min-height: 0;
+}
+
+.slide-inv__panel-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: var(--secondary-cyan);
+}
+
+.slide-inv__not-guaranteed {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--primary-text);
+  border-top: 1px solid rgba(15, 98, 254, 0.2);
+  padding-top: 12px;
+}
+
+/* —— Slide 16 Highlights —— */
+.slide-why__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.slide-why__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--secondary-cyan);
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.slide-why__highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.slide-why__highlight {
+  text-align: center;
+  padding: 18px 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.slide-why__mid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.slide-why__bottom {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--secondary-text);
+  padding: 16px 18px;
+  border-left: 3px solid var(--primary-blue);
+  background: rgba(15, 98, 254, 0.06);
+}
+
+/* —— Slide 17 Exit —— */
+.slide-exit__message {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  margin-bottom: 18px;
+  max-width: 900px;
+}
+
+.slide-exit__layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  min-height: 0;
+}
+
+.slide-exit__paths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.slide-exit__path {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slide-exit__path-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.slide-exit__flows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slide-exit__ev {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* —— Slide 18 Closing —— */
+.slide-close {
+  justify-content: flex-start;
+}
+
+.slide-close__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--secondary-cyan);
+  margin-bottom: 10px;
+}
+
+.slide-close__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 3.2vw, 40px);
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  max-width: 920px;
+  margin-bottom: 14px;
+}
+
+.slide-close__desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--secondary-text);
+  max-width: 880px;
+  margin-bottom: 12px;
+}
+
+.slide-close__statement {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--primary-text);
+  max-width: 880px;
+  margin-bottom: 20px;
+}
+
+.slide-close__layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  flex: 1;
+  min-height: 0;
+}
+
+.slide-close__panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.slide-close__panel-item label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin-bottom: 4px;
+}
+
+.slide-close__panel-item strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.slide-close__pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.slide-close__formula {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.slide-close__formula-plus {
+  color: var(--primary-blue);
+}
+
+.slide-close__formula-eq {
+  color: var(--secondary-cyan);
+}
+
+.slide-close__formula-result {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--secondary-cyan);
+}
+
+.slide-close__cta-block {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(15, 98, 254, 0.2);
+}
+
+.slide-close__cta {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.slide-close__cta-support {
+  font-size: 13px;
+  color: var(--secondary-text);
+}
+
+.slide-close__contact {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.slide-close__contact-row {
+  display: flex;
+  gap: 8px;
+}
+
+.slide-close__contact-row span:first-child {
+  color: var(--muted-text);
+  min-width: 100px;
+}
+
+.slide-close__final {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+  letter-spacing: 0.01em;
+}
